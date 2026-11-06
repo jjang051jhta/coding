@@ -1,0 +1,14 @@
+/* 1. 헤더 너비 100%, 높이 80px
+2. 로고 왼쪽, 메뉴 오른쪽 배치
+3. 메뉴 가로 정렬 및 간격 30px
+4. 로고와 메뉴 세로 중앙 정렬
+5. 헤더 좌우 패딩 40px */
+.header {
+  height: 80px;
+  background-color: #979797;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+}
