@@ -66,3 +66,7 @@ body {
 .w900 {
   font-weight: 900;
 }
+
+.main-visual img {
+  width: 100%;
+}
