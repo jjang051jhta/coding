@@ -1,0 +1,22 @@
+/* 1. 부모 너비 600px
+2. 박스 크기 80px × 80px
+3. 박스 3개 가로 배치
+4. 박스 간격 20px
+5. 텍스트 중앙 정렬 */
+.container {
+  width: 600px;
+  display: flex;
+  border: 1px solid #f00;
+  justify-content: center;
+  gap: 20px;
+  /* flex-direction: row; */
+}
+.box {
+  width: 80px;
+  height: 80px;
+  background-color: aqua;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

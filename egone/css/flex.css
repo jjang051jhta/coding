@@ -1,15 +1,19 @@
 .container {
   display: flex;
-  flex-direction: row;
+
   justify-content: start;
-  gap: 20px;
   /* justify-content의 속성으로는 
     start, center, end, space-between, space-around, space-evenly가 있다 */
   border: 1px solid #f00;
 }
 .box {
-  width: 100px;
-  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
   background-color: beige;
   border: 1px solid black;
+}
+.box3 {
 }
