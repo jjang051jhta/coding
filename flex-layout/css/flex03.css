@@ -5,12 +5,17 @@
 5. 헤더 좌우 패딩 40px */
 body {
   margin: 0;
+  font-family: "Pretendard", "Noto Sans KR", "맑은 고딕", "Malgun Gothic";
+}
+.logo {
+  font-family: "Jua";
 }
 .gnb {
   display: flex;
   /* gap: 20px; */
 }
 .gnb a {
+  font-weight: 500;
   text-decoration: none;
   color: #000;
   display: flex;
@@ -29,4 +34,35 @@ body {
   align-items: center;
   padding-left: 40px;
   padding-right: 40px;
+}
+
+.noto {
+  font-family: "Noto Sans KR";
+}
+.w100 {
+  font-weight: 100;
+}
+.w200 {
+  font-weight: 200;
+}
+.w300 {
+  font-weight: 300;
+}
+.w400 {
+  font-weight: 400;
+}
+.w500 {
+  font-weight: 500;
+}
+.w600 {
+  font-weight: 600;
+}
+.w700 {
+  font-weight: 700;
+}
+.w800 {
+  font-weight: 800;
+}
+.w900 {
+  font-weight: 900;
 }

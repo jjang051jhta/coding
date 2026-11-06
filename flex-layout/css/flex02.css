@@ -3,6 +3,10 @@
 3. 자식 박스를 부모 정중앙에 배치
 4. 부모 배경색 #e2e8f0
 5. 자식 배경색 #0d9488 */
+
+body {
+  font-family: "Jua";
+}
 .container {
   width: 600px;
   height: 300px;
@@ -12,6 +16,7 @@
   align-items: center;
 }
 .box {
+  font-size: 24px;
   width: 100px;
   height: 100px;
   background-color: #0d9488;
