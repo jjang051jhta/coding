@@ -13,6 +13,9 @@ a {
 li {
   list-style: none;
 }
+img {
+  vertical-align: top;
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -79,10 +82,13 @@ li {
   width: 100%;
 }
 /* pseudo */
+
 .feature-box {
   /* padding-top: 100px;
   padding-bottom: 100px; */
-  padding: 150px 0;
+  padding: 150px 100px;
+  /* width: 100%; */
+  max-width: 100vw;
 }
 .feature-box .heading-box {
   text-align: center;
@@ -96,4 +102,57 @@ li {
   font-weight: 700;
   color: #999;
   margin-top: 80px;
+}
+
+.feature-box .list {
+  display: flex;
+  gap: 30px;
+}
+.feature-box .list li {
+  position: relative;
+}
+.feature-box .list .img-box {
+  /* border-top-left-radius: 50px;
+  border-top-right-radius: 50px; */
+  border-radius: 50px 50px 0 0;
+  /* 1일때 전부다 */
+  /* 2일때 좌상.우하 / 우상.좌하 */
+  /* 3일때 좌상 / 우상.좌하 / 우하 */
+  /* 4일때 좌상 / 우상 / 우하 / 좌하  */
+  /* border: 2px solid #f00; */
+  overflow: hidden;
+}
+.feature-box .list img {
+  width: 100%;
+}
+/* 좌표 position top:100px; */
+.feature-box .list .info-box {
+  background-color: #ccc;
+  border-radius: 50px;
+  padding: 50px;
+  position: absolute;
+  bottom: -120px;
+}
+.feature-box .list .info-box h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.feature-box .list .info-box p {
+  color: #666;
+}
+/* 
+  디자인 위계 Hierarchy
+  크게/작게
+  진하게/연하게
+  유채색/무채색
+  뎁스
+
+
+*/
+.agree {
+  width: 600px;
+  height: 500px;
+  border: 1px solid #f00;
+  overflow-x: hidden;
 }
