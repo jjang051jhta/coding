@@ -92,6 +92,8 @@ img {
 }
 .feature-box .heading-box {
   text-align: center;
+
+  margin-bottom: 100px;
 }
 .feature-box .heading-box h2 {
   font-size: 36px;
@@ -101,11 +103,12 @@ img {
   font-size: 20px;
   font-weight: 700;
   color: #999;
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 .feature-box .list {
   display: flex;
+  justify-content: center;
   gap: 30px;
 }
 .feature-box .list li {
@@ -131,7 +134,7 @@ img {
   border-radius: 50px;
   padding: 50px;
   position: absolute;
-  bottom: -120px;
+  bottom: -150px;
 }
 .feature-box .list .info-box h3 {
   font-size: 24px;
@@ -139,7 +142,14 @@ img {
   margin-bottom: 20px;
 }
 .feature-box .list .info-box p {
+  /* px / vw/vh / em (부모 기준의 글자크기) */
   color: #666;
+  line-height: 1.5;
+  height: 4.5em;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 /* 
   디자인 위계 Hierarchy
