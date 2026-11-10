@@ -8,7 +8,7 @@ body {
 }
 a {
   text-decoration: none;
-  color: #000000;
+  color: inherit;
 }
 li {
   list-style: none;
@@ -18,7 +18,8 @@ img {
 }
 .header {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content: center;
   align-items: center;
   padding-left: 100px;
   padding-right: 100px;
@@ -29,6 +30,18 @@ img {
   background-color: rgba(255, 255, 255, 0.5);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
+  z-index: 999;
+}
+.logo {
+  position: absolute;
+  left: 100px;
+}
+.util-menu {
+  position: absolute;
+  right: 100px;
+}
+.util-menu {
+  color: #fff;
 }
 .list {
   display: flex;
@@ -44,6 +57,7 @@ img {
   /* border: 1px solid #f00; */
 }
 .main-visual {
+  position: relative;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -51,6 +65,7 @@ img {
   align-items: center;
   gap: 50px;
   background-image: url("../images/main-visual.jpg");
+  background-size: cover;
 }
 .main-visual .heading {
   font-size: 48px;
@@ -134,9 +149,14 @@ img {
   border-radius: 50px;
   padding: 50px;
   position: absolute;
+  width: 100%;
+  box-sizing: border-box;
   bottom: -150px;
 }
 .feature-box .list .info-box h3 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -145,10 +165,13 @@ img {
   /* px / vw/vh / em (부모 기준의 글자크기) */
   color: #666;
   line-height: 1.5;
+  /* 가변높이 유동적인 높이 */
   height: 4.5em;
+  font-size: 16px;
+  /* border: 1px solid #f00; */
   display: -webkit-box;
-  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
   overflow: hidden;
 }
 /* 
@@ -165,4 +188,18 @@ img {
   height: 500px;
   border: 1px solid #f00;
   overflow-x: hidden;
+}
+
+.popup {
+  width: 400px;
+  height: 500px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  position: absolute;
+  z-index: 9;
+  top: 150px;
+  left: 150px;
+  /* #ffcc00 */
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
 }

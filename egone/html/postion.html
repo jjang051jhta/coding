@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grand-parent {
+        padding: 100px;
+        border: 1px solid #f00;
+        margin-top: 100px;
+        margin-left: 100px;
+        position: relative;
+      }
+      .parent {
+        padding: 100px;
+        border: 1px solid #f00;
+        margin-top: 100px;
+        margin-left: 100px;
+        position: relative;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #999;
+      }
+      .box01 {
+        background-color: #b6fc7d;
+      }
+      .box02 {
+        background-color: #86adff;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      .box03 {
+        background-color: #e48934;
+        height: 300px;
+        position: relative;
+        z-index: 99;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grand-parent">
+      <div class="parent">
+        <div class="box box01">box01</div>
+        <div class="box box02">box02</div>
+        <div class="box box03">box03</div>
+      </div>
+    </div>
+  </body>
+</html>
