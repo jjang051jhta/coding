@@ -11,7 +11,9 @@
       crossorigin
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../css/layout.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   </head>
   <body>
     <!-- semantic coding -->
@@ -147,9 +149,9 @@
             전문가가 만들고, 결과로 증명합니다
           </p>
         </div>
-        <div>
-          <ul class="list">
-            <li>
+        <div class="banner">
+          <ul class="list swiper-wrapper">
+            <li class="swiper-slide">
               <div class="img-box">
                 <img src="../images/banner01.jpg" alt="" />
               </div>
@@ -160,7 +162,7 @@
                 </p>
               </div>
             </li>
-            <li>
+            <li class="swiper-slide">
               <div class="img-box">
                 <img src="../images/banner01.jpg" alt="" />
               </div>
@@ -171,7 +173,7 @@
                 </p>
               </div>
             </li>
-            <li>
+            <li class="swiper-slide">
               <div class="img-box">
                 <img src="../images/banner01.jpg" alt="" />
               </div>
@@ -182,7 +184,7 @@
                 </p>
               </div>
             </li>
-            <li>
+            <li class="swiper-slide">
               <div class="img-box">
                 <img src="../images/banner01.jpg" alt="" />
               </div>
@@ -193,7 +195,7 @@
                 </p>
               </div>
             </li>
-            <li>
+            <li class="swiper-slide">
               <div class="img-box">
                 <img src="../images/banner01.jpg" alt="" />
               </div>
@@ -204,7 +206,29 @@
                 </p>
               </div>
             </li>
-            <li>
+            <li class="swiper-slide">
+              <div class="img-box">
+                <img src="../images/banner01.jpg" alt="" />
+              </div>
+              <div class="info-box">
+                <h3>가르치는 샘이 직접 제작한 자료</h3>
+                <p>
+                  자료 전체가 티칭 경력 20년 이상의 선생님들이 학생들의 약점을 정확하게 분석하여 직접 제작한 고품질 학습 콘텐츠로 구성되어 있습니다.
+                </p>
+              </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="img-box">
+                <img src="../images/banner01.jpg" alt="" />
+              </div>
+              <div class="info-box">
+                <h3>가르치는 샘이 직접 제작한 자료</h3>
+                <p>
+                  자료 전체가 티칭 경력 20년 이상의 선생님들이 학생들의 약점을 정확하게 분석하여 직접 제작한 고품질 학습 콘텐츠로 구성되어 있습니다.
+                </p>
+              </div>
+            </li>
+            <li class="swiper-slide">
               <div class="img-box">
                 <img src="../images/banner01.jpg" alt="" />
               </div>
@@ -229,5 +253,13 @@
     <footer class="footer">
       <p>ALL COPYRIGHT RESERVED BY JJANG051'S MEDIALAB</p>
     </footer>
+    <script>
+      // prettier-ignore
+      const swiper = new Swiper(".banner", 
+      { loop: true, 
+        slidesPerView: "auto", 
+        centeredSlides: true, 
+        spaceBetween: 30 });
+    </script>
   </body>
 </html>

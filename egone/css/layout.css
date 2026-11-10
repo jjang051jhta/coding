@@ -180,16 +180,20 @@ img {
   overflow: hidden;
 }
 .banner-box .list {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 30px; */
 }
 .banner-box .list li {
+  width: 450px;
   position: relative;
 }
 .banner-box .list li .img-box {
   border-radius: 50px;
   overflow: hidden;
+}
+.banner-box .list li .img-box img {
+  width: 100%;
 }
 
 .banner-box .list li .info-box {
