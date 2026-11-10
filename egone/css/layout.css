@@ -100,23 +100,23 @@ img {
 }
 /* pseudo */
 
-.feature-box {
+.contents-box {
   /* padding-top: 100px;
   padding-bottom: 100px; */
   padding: 150px 100px;
   /* width: 100%; */
   max-width: 100vw;
 }
-.feature-box .heading-box {
+.contents-box .heading-box {
   text-align: center;
 
   margin-bottom: 100px;
 }
-.feature-box .heading-box h2 {
+.contents-box .heading-box h2 {
   font-size: 36px;
   font-weight: 700;
 }
-.feature-box .heading-box p {
+.contents-box .heading-box p {
   font-size: 20px;
   font-weight: 700;
   color: #999;
@@ -155,7 +155,7 @@ img {
   box-sizing: border-box;
   bottom: -150px;
 }
-.feature-box .list .info-box h3 {
+.contents-box .list .info-box h3 {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -163,7 +163,7 @@ img {
   font-weight: 700;
   margin-bottom: 20px;
 }
-.feature-box .list .info-box p {
+.contents-box .list .info-box p {
   /* px / vw/vh / em (부모 기준의 글자크기) */
   color: #666;
   line-height: 1.5;
@@ -175,6 +175,32 @@ img {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   overflow: hidden;
+}
+.banner-box {
+  overflow: hidden;
+}
+.banner-box .list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.banner-box .list li {
+  position: relative;
+}
+.banner-box .list li .img-box {
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.banner-box .list li .info-box {
+  width: calc(100% - 20px);
+  position: absolute;
+  background-color: #fff;
+  bottom: 10px;
+  left: 10px;
+  border-radius: 40px;
+  padding: 30px;
+  box-sizing: border-box;
 }
 /* 
   디자인 위계 Hierarchy
