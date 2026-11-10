@@ -27,11 +27,13 @@ img {
   /* width: calc(100% - 200px); */
   width: 100%;
   box-sizing: border-box;
+  transition: all 0.5s ease;
   background-color: rgba(255, 255, 255, 0.5);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
   z-index: 999;
 }
+
 .logo {
   position: absolute;
   left: 100px;
@@ -202,4 +204,10 @@ img {
   /* #ffcc00 */
   border-radius: 15px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+/* 일산동구 장항동 */
+/* 클래스명 뒤에 한칸을 띄우면 ~의 영어 of와 같은 의미 */
+.popup .footer {
+  background-color: #333;
+  color: #fff;
 }
