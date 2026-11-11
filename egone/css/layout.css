@@ -130,7 +130,22 @@ img {
 .visual-box .visual03 {
   background-image: url("../images/main-visual03.jpg");
 }
-
+.main-visual .swiper-pagination {
+  bottom: 80px;
+}
+.main-visual .swiper-pagination-bullet {
+  opacity: 1;
+  border: 3px solid #fff;
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  transition: all 0.5s ease;
+}
+.main-visual .swiper-pagination-bullet-active {
+  background-color: #fff;
+  width: 80px;
+}
 /* pseudo */
 
 .contents-box {
