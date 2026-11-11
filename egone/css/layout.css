@@ -45,6 +45,12 @@ img {
 .util-menu {
   color: #fff;
 }
+.util-menu .material-symbols-outlined {
+  font-size: 32px;
+  font-variation-settings:
+    "wght" 300,
+    "FILL" 1;
+}
 .list {
   display: flex;
   font-size: 18px;
@@ -80,6 +86,8 @@ img {
   transform: translateX(-50%) translateY(-50%);
   /* background-color: rgba(255, 0, 0, 0.2); */
   z-index: 3;
+}
+.heading-box {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -94,7 +102,7 @@ img {
   font-size: 20px;
   font-weight: 700;
 }
-.main-visual .btn {
+.btn {
   background-color: #fff;
   /* padding-left: 50px;
   padding-right: 50px;
@@ -255,6 +263,75 @@ img {
   padding: 30px;
   box-sizing: border-box;
 }
+.banner .swiper-pagination {
+  bottom: 80px;
+}
+.banner .swiper-pagination .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+  border-radius: 100px;
+  transition: all 0.5s ease;
+}
+.banner .swiper-pagination .swiper-pagination-bullet-active {
+  width: 40px;
+}
+.icons {
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: #999;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icons .icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  /* width: 500px; */
+}
+@keyframes moveY {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100px);
+  }
+}
+@keyframes moveX {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100px);
+  }
+}
+
+.icons .icon01 {
+  left: 20%;
+  top: 20%;
+  animation: moveY 2s ease infinite alternate;
+}
+.icons .icon02 {
+  left: 80%;
+  top: 25%;
+  animation: moveX 2s ease infinite alternate;
+}
+.icons .icon03 {
+  left: 30%;
+  top: 60%;
+}
+.icons .icon04 {
+  left: 55%;
+  top: 65%;
+}
+.icons .icon05 {
+  left: 75%;
+  top: 45%;
+}
+
 /* 
   디자인 위계 Hierarchy
   크게/작게
