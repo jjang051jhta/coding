@@ -385,7 +385,11 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  width: 720px;
+  gap: 10px 0;
+  width: 750px;
+}
+.footer .info .info-item {
+  display: flex;
 }
 .footer .info dt {
 }
@@ -393,6 +397,7 @@ img {
   margin-left: 10px;
   display: flex;
   align-items: center;
+  white-space: nowrap;
 }
 /* 모든 태그는 before와 after라는 가상요소를 가질 수 있다. */
 
@@ -410,4 +415,28 @@ img {
   height: 12px;
   background-color: #fff;
   margin-left: 10px;
+}
+
+.footer .btn-box {
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+}
+.footer .btn-box .btn {
+  margin-top: 0;
+  height: 60px;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+}
+.footer .btn-box .btn-icon {
+  padding: 0;
+  width: 60px;
+  height: 60px;
+  display: block;
+}
+.footer .btn-box .copyright {
+  margin-left: auto;
 }
