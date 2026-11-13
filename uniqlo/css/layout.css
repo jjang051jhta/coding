@@ -178,3 +178,13 @@ body {
 .category-list a img {
   height: 100px;
 }
+.btn-box {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.btn-box a {
+  padding: 15px 100px;
+  border: 1px solid #999;
+  border-radius: 100px;
+}
